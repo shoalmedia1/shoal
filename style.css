@@ -1,0 +1,325 @@
+@font-face {
+  font-family: Type;
+  src: url(typewriter.ttf);
+  }
+
+body {
+  margin: 0;
+  font-family: Type, sans-serif;
+  color: #131313;
+  background-color: #d3d3d3;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+p {
+  text-align: justify;
+}
+
+.centre {
+  text-align: center;
+}
+
+#quote {
+  font-family: Type, sans-serif;
+  font-size: 17px;
+  width: 60%;
+  margin: auto;
+  line-height: 1;
+}
+/*Header*/
+
+header {
+  font-family: Type, sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  /*border-bottom: 1px solid black;*/
+  align-items: left;
+  overflow: hidden;
+  text-align: left;
+}
+
+header img {
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+header h1 {
+  /*margin: 73px 0 13px 0;
+  margin-top: 73px;*/
+}
+
+header p {
+  font-size: 10pt;
+  margin: 0;
+  /*margin-bottom: 60px;*/
+  line-height: 1;
+}
+
+.socials {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+
+/*Socials*/
+.fab {
+  font-size: 35px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 5px 0;
+}
+
+.fab:hover {
+  color: #d3d3d3;
+}
+
+.fa-twitch {
+  color: #131313;
+  font-size: 33px;
+  margin-top: 10px;
+}
+
+.fa-twitter {
+  color: #131313;
+}
+
+.fa-instagram {
+  color: #131313;
+}
+
+/*Nav bar*/
+
+.nav {
+  background-color:#131313;
+  height: 50px;
+  line-height: 1;
+}
+
+.navItem {
+  width: 33.333%;
+  height: 100%;
+  }
+
+.nav a {
+  height: 100%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+.nav a:any-link {
+  color: white;
+  text-decoration: none;
+}
+
+
+.navItem a:hover {
+  background-color: #d3d3d3;
+  color: #131313;
+  text-decoration: none;
+}
+
+/*Content*/
+
+h2, 
+h3{
+  font-size: 40pt;
+}
+
+.content {
+  justify-content: center;
+}
+
+.content p {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 15%;
+}
+
+.content a:any-link {
+  text-decoration: underline;
+  color: #131313;
+}
+
+.content img {
+  width: 75%;
+  padding: 10px;
+}
+
+.who {
+  justify-content: center;
+  
+}
+
+h4 {
+  font-size: 24pt;
+}
+
+.people {
+  width: 400px;
+}
+  
+  .people img {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #handle {
+    padding: 0;
+    margin: 0;
+    font-family: Type, sans-serif;
+  }
+
+  /*iFrame*/
+
+  iframe {
+    width: 80%;
+    height: 1000px;
+  }
+
+/*Footer*/
+
+footer {
+  background-color: white;
+  margin-top: 30px;
+}
+
+footer h5 {
+  padding: 30px;
+  margin: 0;
+}
+
+.foot {
+  height: 50px;
+}
+
+.footItem {
+  width: 25%;
+  height: 100%;
+  }
+
+.foot a {
+  height: 100%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+.foot a:any-link {
+  color: #131313;
+  text-decoration: none;
+}
+
+
+.footItem a:hover {
+  background-color: #d3d3d3;
+  color: #131313;
+  text-decoration: none;
+}
+
+/*Media Styles*/
+
+@media only screen and (max-width: 1000px) {
+  
+header p {
+  width: 300px
+}
+}
+@media only screen and (max-width: 700px) {
+.socialsA {
+  width:50px;
+  margin: auto;
+}
+
+.socials {
+  padding-right: 0;
+}
+
+.fa-discord {
+  
+font-size: 36px;
+    margin-top: 4px;
+}
+}
+
+@media only screen and (max-width: 550px) {
+header img {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+}
+  
+header h1 {
+  font-size: 16pt;
+}
+
+header p {
+  flex: 1;
+  font-size: 10pt;
+  width: 200px;
+}
+
+.footItem {
+  font-size: 10pt;
+  }
+
+  .socials {
+    position: absolute;
+	left: -1000px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 350px) {
+
+.navItem {
+  width: 100%;
+  height: 30px;
+  }
+
+  .nav {
+  background-color:#131313;
+  height: 90px;
+}
+
+.footItem {
+  width: 100%;
+  height: 30px;
+  }
+
+  .foot {
+  background-color:white;
+  height: 120px;
+}
+
+header img {
+    position: absolute;
+	left: -1000px;
+  }
+
+  .titleWrap {
+    margin: 5px;
+  }
+}
